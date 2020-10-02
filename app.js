@@ -15,8 +15,8 @@ const adminRoutes = require("./routes/admin");
 const authRoutes = require("./routes/auth");
 
 mongoose.connect(
-  'mongodb://localhost:27017/sk-fitnessclub?readPreference=primary&appname=MongoDB%20Compass&ssl=false',
-  // "mongodb+srv://sumit:" + process.env.MONGO_ATLAS_PW + "@cluster0-6xhil.mongodb.net/sk-fitnessclub?retryWrites=true&w=majority",
+  // 'mongodb://localhost:27017/sk-fitnessclub?readPreference=primary&appname=MongoDB%20Compass&ssl=false',
+  "mongodb+srv://sumit:" + process.env.MONGO_ATLAS_PW + "@cluster0-6xhil.mongodb.net/sk-fitnessclub?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
   )
 .then( response => {
